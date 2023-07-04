@@ -15,7 +15,7 @@
     width: 150px;
   }
 
-  @media (max-height: 500px) and (orientation: landscape) {
+  @media (max-height: 650px) and (orientation: landscape) {
     aspect-ratio: unset;
     width: 20vh;
     height: 20vh;

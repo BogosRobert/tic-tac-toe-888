@@ -24,6 +24,11 @@
     flex-direction: row;
     gap: 20px;
   }
+
+  @media (max-height: 650px) and (orientation: landscape) {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 .actionButtonsWrapper {
