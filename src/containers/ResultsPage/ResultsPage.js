@@ -41,7 +41,7 @@ const ResultsPage = () => {
       </h2>
 
       <button type="button" onClick={handleReset}>
-        Restart
+        Start new game
       </button>
     </div>
   );
