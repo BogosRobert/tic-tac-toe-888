@@ -1,0 +1,18 @@
+:root {
+  --themeColorBlue: #1a1a2e;
+  --themeColorWhite: #cfd0ff;
+  --border-thickness: 3px;
+  --border-radius: 5px;
+  --pagePadding: 20px;
+  --fadeAnimation: fadeInAnimation 0.5s ease-in forwards;
+  --layoutMaxWidth: 500px;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

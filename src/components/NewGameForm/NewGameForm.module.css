@@ -1,0 +1,50 @@
+.formWrapper {
+  opacity: 0;
+  animation: var(--fadeAnimation);
+  animation-delay: 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: var(--layoutMaxWidth);
+}
+
+.fieldWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.formInput {
+  border: var(--border-thickness) solid var(--themeColorWhite);
+  border-radius: var(--border-radius);
+  background-color: var(--themeColorBlue);
+  color: var(--themeColorWhite);
+  height: 40px;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--themeColorWhite);
+  }
+}
+
+.inputLabel {
+  margin-right: 10px;
+  white-space: nowrap;
+  @media (max-width: 768px) {
+    margin-bottom: 10px;
+  }
+}
+
+.error {
+  color: red;
+}

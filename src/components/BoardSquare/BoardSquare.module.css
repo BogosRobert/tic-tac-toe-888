@@ -1,0 +1,28 @@
+.boardSquare {
+  border: var(--border-thickness) solid var(--themeColorWhite);
+  border-radius: var(--border-radius);
+  width: 100%;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  color: var(--themeColorWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+
+  @media (min-width: 768px) and (orientation: landscape) {
+    height: 150px;
+    width: 150px;
+  }
+
+  @media (max-height: 500px) and (orientation: landscape) {
+    aspect-ratio: unset;
+    width: 20vh;
+    height: 20vh;
+    font-size: 15vh;
+  }
+
+  &:hover {
+    transform: scale(0.97);
+  }
+}

@@ -1,0 +1,53 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--themeColorBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--pagePadding);
+  box-sizing: border-box;
+
+  & button {
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+    border: var(--border-thickness) solid var(--themeColorWhite);
+    border-radius: var(--border-radius);
+    background-color: var(--themeColorWhite);
+    color: var(--themeColorBlue);
+  }
+
+  @media (max-width: 768px) and (orientation: landscape) {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+.actionButtonsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: var(--layoutMaxWidth);
+  @media (max-width: 768px) and (orientation: landscape) {
+    width: 40%;
+    justify-content: center;
+  }
+}
+
+.boardWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: var(--layoutMaxWidth);
+  max-height: 90vh;
+  @media (max-width: 768px) and (orientation: landscape) {
+    width: 60%;
+  }
+}

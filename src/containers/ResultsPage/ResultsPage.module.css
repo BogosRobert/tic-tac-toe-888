@@ -1,0 +1,30 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: var(--pagePadding);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--themeColorBlue);
+  color: var(--themeColorWhite);
+  box-sizing: border-box;
+
+  & h2 {
+    text-align: center;
+    animation: var(--fadeAnimation);
+  }
+
+  & button {
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    border: var(--border-thickness) solid var(--themeColorWhite);
+    border-radius: var(--border-radius);
+    background-color: var(--themeColorWhite);
+    color: var(--themeColorBlue);
+    animation: var(--fadeAnimation);
+  }
+}
